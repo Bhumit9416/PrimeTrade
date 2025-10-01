@@ -1,3 +1,4 @@
+cat > README.md << 'EOF'
 # 📌 Full-Stack Task Management API (Intern Assignment)
 
 A **scalable REST API with authentication and role-based access** built as part of a Backend Developer assignment.  
@@ -38,53 +39,60 @@ Includes a **secure Node.js backend** and a **React.js frontend** to demonstrate
 ### Installation
 
 **Clone the repo:**
-```bash
+\`\`\`bash
 git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name
-Backend Setup:
+\`\`\`
 
-bash
-Copy code
+**Backend Setup:**
+\`\`\`bash
 cd backend
 npm install
 touch .env
-.env file:
+\`\`\`
 
-env
-Copy code
+**.env file:**
+\`\`\`env
 PORT=5000
 MONGO_URI=YOUR_MONGODB_ATLAS_CONNECTION_STRING
 JWT_SECRET=YOUR_SUPER_SECRET_RANDOM_KEY
-Run backend:
+\`\`\`
 
-bash
-Copy code
+**Run backend:**
+\`\`\`bash
 npm start
+\`\`\`
 API → http://localhost:5000
 
-Frontend Setup:
-
-bash
-Copy code
+**Frontend Setup:**
+\`\`\`bash
 cd frontend
 npm install
 npm start
+\`\`\`
 Frontend → http://localhost:3000
 
-🔌 API Endpoints
-Auth Routes
-Method	Endpoint	Description	Auth
-POST	/register	Register new user	❌
-POST	/login	Log in user	❌
+---
 
-Task Routes
-Method	Endpoint	Description	Auth
-GET	/	Get all tasks of logged-in user	✅
-POST	/	Create new task	✅
-PUT	/:id	Update own task	✅
-DELETE	/:id	Delete task (user/admin)	✅
+## 🔌 API Endpoints
 
-🌐 Live Demo
-Frontend: Netlify Demo
+### Auth Routes
+| Method | Endpoint   | Description       | Auth |
+|--------|------------|------------------|------|
+| POST   | /register  | Register new user | ❌   |
+| POST   | /login     | Log in user       | ❌   |
 
-Backend: Render API
+### Task Routes
+| Method | Endpoint | Description                     | Auth |
+|--------|----------|---------------------------------|------|
+| GET    | /        | Get all tasks of logged-in user | ✅   |
+| POST   | /        | Create new task                 | ✅   |
+| PUT    | /:id     | Update own task                 | ✅   |
+| DELETE | /:id     | Delete task (user/admin)        | ✅   |
+
+---
+
+## 🌐 Live Demo
+- **Frontend**: [Netlify Demo](https://cheerful-llama-d90774.netlify.app/register)  
+- **Backend**: [Render API](https://my-task-api-b3ox.onrender.com)
+
