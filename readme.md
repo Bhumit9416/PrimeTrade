@@ -93,6 +93,6 @@ Frontend → http://localhost:3000
 ---
 
 ## 🌐 Live Demo
-- **Frontend**: [Netlify Demo](https://cheerful-llama-d90774.netlify.app/register)  
+- **Frontend**: [Netlify Demo](cheerful-llama-d90774.netlify.app)  
 - **Backend**: [Render API](https://my-task-api-b3ox.onrender.com)
 
